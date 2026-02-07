@@ -8,17 +8,17 @@ Repository: IT342_G6_CARIN_Lab1 (or IT342_G5_<Lastname>_Lab1 as per your section
 
 | Task | Commit Hash |
 |------|-------------|
-| Repository structure (/web, /backend, /mobile, /docs) | *(add after first commit)* |
-| Backend: POST /api/auth/register | *(add after commit)* |
-| Backend: POST /api/auth/login | *(add after commit)* |
-| Backend: GET /api/user/me (protected) | *(add after commit)* |
-| Backend: MySQL connection | *(add after commit)* |
-| Backend: Password encryption (BCrypt) | *(add after commit)* |
-| Web: Register page | *(add after commit)* |
-| Web: Login page | *(add after commit)* |
-| Web: Dashboard/Profile page (protected) | *(add after commit)* |
-| Web: Logout functionality | *(add after commit)* |
-| README.md and TASK_CHECKLIST.md | *(add after commit)* |
+| Repository structure (/web, /backend, /mobile, /docs) | 5348698 |
+| Backend: POST /api/auth/register | 5348698 |
+| Backend: POST /api/auth/login | 5348698 |
+| Backend: GET /api/user/me (protected) | 5348698 |
+| Backend: MySQL connection | 5348698 |
+| Backend: Password encryption (BCrypt) | 5348698 |
+| Web: Register page | 5348698 |
+| Web: Login page | 5348698 |
+| Web: Dashboard/Profile page (protected) | 5348698 |
+| Web: Logout functionality | 5348698 |
+| README.md and TASK_CHECKLIST.md | 5348698 |
 
 **Note:** After you push commits, replace `*(add after commit)*` with the actual commit hash (e.g. `a1b2c3d`) for each task. You may use one commit for the whole Session 1 delivery or separate commits per feature; in the latter case, list the corresponding hash per row.
 
