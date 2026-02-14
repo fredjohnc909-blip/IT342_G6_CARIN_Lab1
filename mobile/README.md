@@ -2,11 +2,13 @@
 
 Register, Login, Dashboard (Profile), and Logout using the same Spring Boot backend as the web app.
 
+**Important:** Open **this** `mobile` folder in Android Studio (File → Open → select the `mobile` folder inside the repo). Do not use a separate "IT342_Carin" template project; this folder already contains the full auth app.
+
 ## Requirements
 
 - Android Studio (Hedgehog or newer recommended)
 - JDK 17
-- Backend running on host (e.g. `http://localhost:8080`)
+- Backend running on host (e.g. `http://localhost:8080`) and MySQL (XAMPP, DB `it342_carin_lab1`)
 
 ## Backend URL
 

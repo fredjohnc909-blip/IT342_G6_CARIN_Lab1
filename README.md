@@ -3,6 +3,8 @@
 Authentication system: **Web** (React), **Mobile** (Android Kotlin), and **Backend** (Spring Boot).  
 Same backend API for both clients; passwords stored encrypted (BCrypt).
 
+**→ Step-by-step: [CONNECTING.md](CONNECTING.md)** (XAMPP, backend, web, and mobile).
+
 ---
 
 ## Repository structure

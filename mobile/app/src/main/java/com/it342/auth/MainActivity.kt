@@ -3,10 +3,11 @@ package com.it342.auth
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.it342.auth.ui.LoginFragment
+import com.it342.auth.api.ApiClient
 import com.it342.auth.ui.DashboardFragment
-import com.it342.auth.ui.RegisterFragment
+import com.it342.auth.ui.LoginFragment
 import com.it342.auth.ui.MainActivityContract
+import com.it342.auth.ui.RegisterFragment
 
 class MainActivity : AppCompatActivity(), MainActivityContract {
 
@@ -35,19 +36,19 @@ class MainActivity : AppCompatActivity(), MainActivityContract {
             .commit()
     }
 
-    fun openRegister() {
+    override fun openRegister() {
         replaceFragment(RegisterFragment.newInstance())
     }
 
-    fun openLogin() {
+    override fun openLogin() {
         replaceFragment(LoginFragment.newInstance())
     }
 
-    fun openDashboard() {
+    override fun openDashboard() {
         replaceFragment(DashboardFragment.newInstance())
     }
 
-    fun logout() {
+    override fun logout() {
         tokenManager.clear()
         openLogin()
     }
