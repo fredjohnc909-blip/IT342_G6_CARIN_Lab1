@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+web/node_modules/
+
+# Build outputs
+backend/target/
+mobile/build/
+mobile/app/build/
+mobile/.gradle/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local env
+.env
+.env.local

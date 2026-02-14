@@ -1,0 +1,42 @@
+package com.it342.auth.controller;
+
+import com.it342.auth.dto.AuthResponse;
+import com.it342.auth.dto.LoginRequest;
+import com.it342.auth.dto.MessageResponse;
+import com.it342.auth.dto.RegisterRequest;
+import com.it342.auth.service.AuthService;
+import jakarta.validation.Valid;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/auth")
+public class AuthController {
+
+    private final AuthService authService;
+
+    public AuthController(AuthService authService) {
+        this.authService = authService;
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
+        AuthResponse response = authService.register(request);
+        return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponse> login(@Valid @RequestBody LoginRequest request) {
+        AuthResponse response = authService.login(request);
+        return ResponseEntity.ok(response);
+    }
+
+    /**
+     * Logout: client should discard the JWT (stateless).
+     * This endpoint returns a consistent success response for clients that call it.
+     */
+    @PostMapping("/logout")
+    public ResponseEntity<MessageResponse> logout() {
+        return ResponseEntity.ok(new MessageResponse("Logged out successfully"));
+    }
+}
